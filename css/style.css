@@ -18,11 +18,15 @@ header{
     border-bottom: 0.5em solid #ff0000;
 }
 
+/* Cabeçalho */
+
 .container-principal{
     display: flex;
     align-items: center;
     height: 150px;
 }
+
+/* Botão de menu */
 
 .container-menu {
     margin: 10px 160px 0 30px;
@@ -35,6 +39,8 @@ header{
 .logo-icon img{
     width: 20em;
 }
+
+/* barra de pesquisa */
 
 .search-wrapper{
     margin: 20px 0 0 20px;
@@ -64,6 +70,8 @@ header{
     outline: none;
 }
 
+/* Botão de filtro */
+
 .container-filter{
     margin: 10px 0 0 200px;
 }
@@ -71,6 +79,8 @@ header{
 .filter-icon{
     font-size: 2em;
 }
+
+/* barra de navegação */
 
 nav{
     text-align: center;
@@ -101,6 +111,55 @@ nav a::after{
 
 nav a:hover::after{
     width: 70%;
+}
+
+/* Banner */
+
+.container-banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.banner-icon img{
+    width: 70em;
+    height: 15em;
+}
+
+/* Prateleira de livros */
+
+.linha-H{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.container-livros{
+    background-color: #ffffff;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.livro-capa{
+    background-color: #ff0000;
+    width: 160px;
+    height: 210px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.autor{
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 900px) {
