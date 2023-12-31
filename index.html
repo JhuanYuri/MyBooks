@@ -9,33 +9,29 @@
 </head>
 <body>
     <header>
-        <div class="container-principal">
-            <div class="container-menu">
-                <div class="menu-icon">
-                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
-                </div>
+        <nav class="navbar">
+            <div class="logo-icon">
+                <img src="/img/logo-icon-P.png" alt="logo">
             </div>
-            <div class="container-logo">
-                <div class="logo-icon">
-                    <img src="/img/logo-icon-P.png" alt="logo">
+            <form>
+                <div class="search-wrapper">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Pesquisar...">
                 </div>
+            </form>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="container-search">
-                <form>
-                    <div class="search-wrapper">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Pesquisar...">
-                    </div>
-                </form>
-                </div>
-            <div class="container-filter">
-                <div class="filter-icon">
-                    <i class="fa-solid fa-filter" style="color: #000000;"></i>
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
-    <nav>
+    <nav class="barra-navegação">
         <a href="#">Mais Avaliados</a>
         <a href="#">Seus Avaliados</a>
         <a href="#">Ver listas</a>
@@ -303,5 +299,6 @@
         </div>
     </div>
     </div>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

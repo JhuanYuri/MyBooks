@@ -15,55 +15,58 @@ header{
     background: linear-gradient(#FCEFEF 0%, #FF0000 100%);
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     border-bottom: 0.5em solid #FF0000;
 }
 
 /* Cabeçalho */
 
-.container-principal{
+.navbar{
     display: flex;
     align-items: center;
-    height: 150px;
+    justify-content: space-between;
+    height: 100px;
 }
 
 /* Botão de menu */
 
-.container-menu {
+/*.container-menu {
     margin: 10px 160px 0 30px;
 }
 
 .menu-icon{
     font-size: 2em;
-}
+}*/
+
+/* Logo */
 
 .logo-icon img{
-    width: 20em;
+    width: 17em;
 }
 
 /* barra de pesquisa */
 
 .search-wrapper{
-    margin: 20px 0 0 20px;
-    padding: 8px 10px;
+    margin: 20px 100px 0 20px;
+    padding: 8px 12px;
     display: flex;
     align-items: center;
     gap: 6px;
-    background-color: #000000;
+    background-color: #FCEFEF;
     border-radius: 10px;
 }
 
 .search-wrapper i{
-    color: #FCEFEF;
+    color: #000000;
     cursor: pointer;
 }
 
 .search-wrapper input {
     background-color: transparent;
     border: none;
-    color: #ffffff;
+    color: #000000;
     font-size: 15px;
-    width: 500px;
+    width: 400px;
 
 }
 
@@ -71,19 +74,60 @@ header{
     outline: none;
 }
 
-/* Botão de filtro */
+/* nav-menu */
 
-.container-filter{
+/*.container-filter{
     margin: 10px 0 0 200px;
 }
 
 .filter-icon{
     font-size: 2em;
+}*/
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 15px;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    color: #FCEFEF;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.bar{
+    display: block;
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #FCEFEF;
+    transition: all 0.3s ease-in-out;
 }
 
 /* barra de navegação */
 
-nav{
+.barra-navegação{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 12px;
@@ -91,7 +135,7 @@ nav{
     background: linear-gradient( #FF0000 10%, #FCEFEF 20%);
 }
 
-nav a{
+.barra-navegação a{
     color: #000000;
     text-decoration: none;
     padding: 0px 100px 10px 0;
@@ -99,7 +143,7 @@ nav a{
     position: relative;
 }
 
-nav a::after{
+.barra-navegação a::after{
     content: " ";
     width: 0%;
     height: 5px;
@@ -110,7 +154,7 @@ nav a::after{
     transition: 0.5s ease-in-out;
 }
 
-nav a:hover::after{
+.barra-navegação a:hover::after{
     width: 70%;
 }
 
@@ -171,12 +215,61 @@ nav a:hover::after{
     margin-left: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px){
+
+    header{
+        width: 100%;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .barra-navegação{
+        width: 100%;
+    }
+
     body{
         width: 85em;
     }
 
-    header{
-        width: 85em;
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background-color: #FF0000;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .barra-navegação.active{
+        display: none;
     }
 }
