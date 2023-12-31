@@ -7,15 +7,16 @@
 }
 
 body{
-    background-color: #b4b4b4;
+    background-color: #AFB3B7;
     font-family: 'Roboto', sans-serif;
 }
 
 header{
-    background: linear-gradient(#d4d4d4 0%, #ff0000 100%);
+    background: linear-gradient(#FCEFEF 0%, #FF0000 100%);
     display: flex;
     align-items: center;
-    border-bottom: 0.5em solid #ff0000;
+    justify-items: center;
+    border-bottom: 0.5em solid #FF0000;
 }
 
 /* Cabeçalho */
@@ -53,7 +54,7 @@ header{
 }
 
 .search-wrapper i{
-    color: #d4d4d4;
+    color: #FCEFEF;
     cursor: pointer;
 }
 
@@ -87,7 +88,7 @@ nav{
     padding-top: 30px;
     padding-bottom: 12px;
     width: 100%;
-    background: linear-gradient( #ff0000 10%, #d4d4d4 20%);
+    background: linear-gradient( #FF0000 10%, #FCEFEF 20%);
 }
 
 nav a{
@@ -102,7 +103,7 @@ nav a::after{
     content: " ";
     width: 0%;
     height: 5px;
-    background-color: #ff0000;
+    background-color: #FF0000;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -129,9 +130,15 @@ nav a:hover::after{
 
 /* Prateleira de livros */
 
+.container-biblioteca{
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
 .linha-H{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px 30px;
 }
 
@@ -145,13 +152,13 @@ nav a:hover::after{
 }
 
 .livro-capa img{
-    /*background-color: #ff0000;*/
+    /*background-color: #FF0000;*/
     width: 160px;
     height: 210px;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 12px;
     margin-bottom: 5px;
-    border: solid #ff0000;
+    border: solid #FF0000;
 }
 
 .titulo{
