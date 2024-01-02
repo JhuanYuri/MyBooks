@@ -114,7 +114,7 @@ header{
     height: 5px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color: #FCEFEF;
+    background-color: #000000;
     transition: all 0.3s ease-in-out;
 }
 
@@ -151,10 +151,6 @@ header{
     width: 70%;
 }
 
-.filter{
-    font-size: 20pt;
-}
-
 /* Banner */
 
 .container-banner{
@@ -167,6 +163,27 @@ header{
 .banner-icon img{
     width: 70em;
     height: 15em;
+}
+
+.filter{
+    display: flex;
+    width: 30em;
+    background-color: #FCEFEF;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-inline: 25em;
+    transition: all 0.5s ease-in-out;
+}
+
+.filter:hover{
+    background-color: #FF0000;
+}
+
+.filter i{
+    font-size: 20pt;
+    padding-block: 10px;
 }
 
 /* Prateleira de livros */
@@ -184,12 +201,13 @@ header{
 }
 
 .container-livros{
-    background-color: #ffffff;
+    background-color: #FCEFEF;
     width: 200px;
     height: 300px;
     display: inline-block;
     margin-right: 18px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .livro-capa img{
@@ -197,7 +215,8 @@ header{
     width: 160px;
     height: 210px;
     margin-top: 15px;
-    margin-left: 12px;
+    /*margin-left: 12px;*/
+    margin-inline: 12px;
     margin-bottom: 5px;
     border: solid #FF0000;
 }
@@ -210,6 +229,38 @@ header{
 .autor{
     font-size: 15px;
     margin-left: 10px;
+}
+
+.container-end{
+    display: flex;
+    margin-block: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.seta{
+    padding: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.seta:hover{
+    background-color: #FF0000;
+}
+
+.seta a{
+    color: #000000;
+}
+
+.seta i{
+    font-size: 25pt;
+}
+
+.num{
+    font-size: 20pt;
+    padding: 6px 10px 7px 10px;
+    background-color: #FCEFEF;
 }
 
 @media (max-width: 900px){
@@ -242,6 +293,10 @@ header{
     .banner-icon img{
         width: 35em;
         height: 10em;
+    }
+
+    .filter{
+        margin-inline: 12em;
     }
 
     .container-biblioteca{
@@ -298,7 +353,7 @@ header{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 90px;
+        top: 80px;
         gap: 0;
         border-radius: 0 0 20px 20px;
         text-align: center;
