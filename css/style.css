@@ -76,14 +76,6 @@ header{
 
 /* nav-menu */
 
-/*.container-filter{
-    margin: 10px 0 0 200px;
-}
-
-.filter-icon{
-    font-size: 2em;
-}*/
-
 .nav-menu li{
     list-style: none;
 }
@@ -113,6 +105,7 @@ header{
     display: none;
     cursor: pointer;
     margin-top: 15px;
+    margin-right: 15px;
 }
 
 .bar{
@@ -158,6 +151,10 @@ header{
     width: 70%;
 }
 
+.filter{
+    font-size: 20pt;
+}
+
 /* Banner */
 
 .container-banner{
@@ -175,7 +172,7 @@ header{
 /* Prateleira de livros */
 
 .container-biblioteca{
-    padding-left: 50px;
+    padding-left: 30px;
     padding-right: 30px;
 }
 
@@ -217,22 +214,72 @@ header{
 
 @media (max-width: 900px){
 
-    header{
-        width: 100%;
-    }
-
     .navbar{
         width: 100%;
     }
 
-    .barra-navegação{
-        width: 100%;
+    .logo-icon{
+        width: 30%;
     }
 
-    body{
-        width: 85em;
+    .logo-icon img{
+        width: 15em;
     }
 
+    .search-wrapper{
+        margin: 10px 50px 0 10px;
+    }
+
+    .search-wrapper input{
+        width: 20em;
+    }
+
+    .barra-navegação a{
+        font-size: 15pt;
+        padding: 0px 50px 10px 0;
+    }
+
+    .banner-icon img{
+        width: 35em;
+        height: 10em;
+    }
+
+    .container-biblioteca{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .linha-H{
+        padding-block: 5px;
+        padding-inline: 0px;
+        display: flex;
+    }
+
+    .container-livros{
+        width: 330px;
+        height: 220px;
+        margin-right: 10px;
+    }
+
+    .livro-capa img{
+        width: 110px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 11px;
+        margin-bottom: 5px;
+    }
+
+    .titulo{
+        font-size: 10pt;
+        margin-left: 5px;
+        margin-bottom: 1px;
+    }
+
+    .autor{
+        font-size: 8pt;
+        margin-left: 5px;
+    }
+    
     .hamburger{
         display: block;
     }
