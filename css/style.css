@@ -165,15 +165,16 @@ header{
     height: 15em;
 }
 
+/* Botão de filtro */
+
 .filter{
     display: flex;
     width: 30em;
     background-color: #FCEFEF;
     border-radius: 5px;
-    align-items: center;
     justify-content: center;
     margin-bottom: 15px;
-    margin-inline: 25em;
+    margin-inline: 27em;
     transition: all 0.5s ease-in-out;
 }
 
@@ -184,6 +185,47 @@ header{
 .filter i{
     font-size: 20pt;
     padding-block: 10px;
+}
+
+/* Menu de Categorias */
+
+.nav-categorias{
+    position: absolute;
+    left: -100%;
+    top: 527px;
+    align-items: center;
+    gap: 0;
+    margin-top: 15px;
+    border-block: 0.3em solid #FF0000;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.5s;
+    background-color: #FCEFEF;
+}
+
+.nav-categorias li{
+    list-style: none;
+    margin-block: 5px;
+}
+
+.nav-categorias li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.link-cat{
+    transition: 0.5s ease;
+}
+
+.link-cat:hover{
+    color: #FF0000;
+}
+
+.nav-categorias.ativar{
+    left: 0;
 }
 
 /* Prateleira de livros */
@@ -299,6 +341,10 @@ header{
         margin-inline: 12em;
     }
 
+    .nav-categorias{
+        top: 440px;
+    }
+
     .container-biblioteca{
         padding-left: 10px;
         padding-right: 10px;
@@ -351,7 +397,7 @@ header{
     }
 
     .nav-menu{
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 80px;
         gap: 0;
